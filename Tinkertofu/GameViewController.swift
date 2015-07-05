@@ -11,7 +11,9 @@ import SpriteKit
 
 class GameViewController: UIViewController {
     
-    func moveTurtle(turtle : TurtleScene) {
+    var turtle : TurtleScene!
+    
+    func moveTurtle() {
         // Add all your movement here
         
         turtle.moveForward()
@@ -22,15 +24,14 @@ class GameViewController: UIViewController {
         
     }
     
-    
     // -------- setup code ----------
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let turtle = TurtleScene(size: view.bounds.size)
+        turtle = TurtleScene(size: view.bounds.size)
         let skView = view as! SKView
         skView.presentScene(turtle)
-        moveTurtle(turtle)
+        moveTurtle()
         turtle.move()
     }
     

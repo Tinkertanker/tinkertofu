@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		AFC4B70E1B491E4B005D2474 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC4B70D1B491E4B005D2474 /* AppDelegate.swift */; };
-		AFC4B7121B491E4B005D2474 /* TurtleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC4B7111B491E4B005D2474 /* TurtleScene.swift */; };
+		AFC4B7121B491E4B005D2474 /* TofuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC4B7111B491E4B005D2474 /* TofuScene.swift */; };
 		AFC4B7141B491E4B005D2474 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC4B7131B491E4B005D2474 /* GameViewController.swift */; };
 		AFC4B7171B491E4B005D2474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC4B7151B491E4B005D2474 /* Main.storyboard */; };
-		AFC4B7191B491E4B005D2474 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC4B7181B491E4B005D2474 /* Images.xcassets */; };
 		AFC4B71C1B491E4B005D2474 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC4B71A1B491E4B005D2474 /* LaunchScreen.xib */; };
+		AFCB40951B4972390039EAB5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFCB40941B4972390039EAB5 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AFC4B7081B491E4B005D2474 /* Tinkertofu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinkertofu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC4B70C1B491E4B005D2474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFC4B70D1B491E4B005D2474 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFC4B7111B491E4B005D2474 /* TurtleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurtleScene.swift; sourceTree = "<group>"; };
+		AFC4B7111B491E4B005D2474 /* TofuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TofuScene.swift; sourceTree = "<group>"; };
 		AFC4B7131B491E4B005D2474 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		AFC4B7161B491E4B005D2474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AFC4B7181B491E4B005D2474 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AFC4B71B1B491E4B005D2474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AFCB40941B4972390039EAB5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +57,10 @@
 			isa = PBXGroup;
 			children = (
 				AFC4B70D1B491E4B005D2474 /* AppDelegate.swift */,
-				AFC4B7111B491E4B005D2474 /* TurtleScene.swift */,
+				AFC4B7111B491E4B005D2474 /* TofuScene.swift */,
 				AFC4B7131B491E4B005D2474 /* GameViewController.swift */,
 				AFC4B7151B491E4B005D2474 /* Main.storyboard */,
-				AFC4B7181B491E4B005D2474 /* Images.xcassets */,
+				AFCB40941B4972390039EAB5 /* Images.xcassets */,
 				AFC4B71A1B491E4B005D2474 /* LaunchScreen.xib */,
 				AFC4B70B1B491E4B005D2474 /* Supporting Files */,
 			);
@@ -132,8 +132,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFCB40951B4972390039EAB5 /* Images.xcassets in Resources */,
 				AFC4B71C1B491E4B005D2474 /* LaunchScreen.xib in Resources */,
-				AFC4B7191B491E4B005D2474 /* Images.xcassets in Resources */,
 				AFC4B7171B491E4B005D2474 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFC4B7121B491E4B005D2474 /* TurtleScene.swift in Sources */,
+				AFC4B7121B491E4B005D2474 /* TofuScene.swift in Sources */,
 				AFC4B7141B491E4B005D2474 /* GameViewController.swift in Sources */,
 				AFC4B70E1B491E4B005D2474 /* AppDelegate.swift in Sources */,
 			);

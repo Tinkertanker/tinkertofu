@@ -1,5 +1,5 @@
 //
-//  TurtleScene
+//  TofuScene
 //  Tinkertofu
 //
 //  Created by Yuan Yuchuan / Zhang Hongyi / Soon Yinjie 5/7/2015.
@@ -8,9 +8,9 @@
 
 import SpriteKit
 
-public class TurtleScene: SKScene {
+public class TofuScene: SKScene {
     
-    var turtle:SKSpriteNode = SKSpriteNode(imageNamed: "karel.png", normalMapped: false)
+    var tofu:SKSpriteNode = SKSpriteNode(imageNamed: "tofu", normalMapped: false)
     let squareSize:Int=50
     var moveSequence = [SKAction]()
     var rotation:Double = 0.0
@@ -37,9 +37,9 @@ public class TurtleScene: SKScene {
         
         scaleMode = .ResizeFill
         
-        turtle.size = CGSizeMake(CGFloat(squareSize),CGFloat(squareSize));
-        turtle.position = positionAtGrid(0 , y:0)
-        //        turtle.runAction(SKAction.repeatActionForever(SKAction.rotateByAngle(6, duration: 2)))
+        tofu.size = CGSizeMake(CGFloat(squareSize),CGFloat(squareSize));
+        tofu.position = positionAtGrid(0 , y:0)
+        //        tofu.runAction(SKAction.repeatActionForever(SKAction.rotateByAngle(6, duration: 2)))
         //Generate terrain, assuming that it's rectangular
         var i=0;
         var j=0;
@@ -75,7 +75,7 @@ public class TurtleScene: SKScene {
             i++;
         }
         //last so it's on top of everything else
-        addChild(turtle)
+        addChild(tofu)
         
     }
     
@@ -122,20 +122,20 @@ public class TurtleScene: SKScene {
             print("  cherries!")
         }
         else{
-            print(self.roundPosition(self.turtle.position))
+            print(self.roundPosition(self.tofu.position))
             var action=self.moveSequence[step]
-            turtle.runAction(action,completion:{
-                var mazeValue = self.mazeValueAtPosition(self.turtle.position)
+            tofu.runAction(action,completion:{
+                var mazeValue = self.mazeValueAtPosition(self.tofu.position)
                 if(mazeValue==1){
                     print("I died!")
                     self.dead=true
-                    self.turtle.runAction(SKAction.repeatActionForever(SKAction.rotateByAngle(6,duration: 2)))
+                    self.tofu.runAction(SKAction.repeatActionForever(SKAction.rotateByAngle(6,duration: 2)))
                 }
                 else if(mazeValue==2){
                     for pickup in self.pickups {
                         print(pickup.position)
-                        print(self.roundPosition(self.turtle.position))
-                        if(pickup.position==self.roundPosition(self.turtle.position)){
+                        print(self.roundPosition(self.tofu.position))
+                        if(pickup.position==self.roundPosition(self.tofu.position)){
                             if(!pickup.hidden){
                                 print(self.score)
                                 self.score++

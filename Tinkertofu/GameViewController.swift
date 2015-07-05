@@ -11,16 +11,15 @@ import SpriteKit
 
 class GameViewController: UIViewController {
     
-    var turtle : TurtleScene!
+    var tofu : TofuScene!
     
-    func moveTurtle() {
+    func moveTofu() {
         // Add all your movement here
         
-        turtle.moveForward()
-        turtle.moveForward()
-        turtle.moveForward()
-        turtle.turnRight()
-        turtle.moveForward()
+        tofu.moveForward()
+        tofu.moveForward()
+        tofu.moveForward()
+        tofu.turnRight()
         
     }
     
@@ -28,11 +27,11 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        turtle = TurtleScene(size: view.bounds.size)
+        tofu = TofuScene(size: view.bounds.size)
         let skView = view as! SKView
-        skView.presentScene(turtle)
-        moveTurtle()
-        turtle.move()
+        skView.presentScene(tofu)
+        moveTofu()
+        tofu.move()
     }
     
     override func prefersStatusBarHidden() -> Bool {
